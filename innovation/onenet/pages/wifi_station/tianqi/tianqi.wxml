@@ -1,0 +1,17 @@
+<!--<canvas class = "canvas" id="chart1"
+canvas-id="humidity"></canvas>
+<canvas class = "canvas" id="chart2"
+canvas-id="light"></canvas>
+<canvas class = "canvas" id="chart3"
+canvas-id="tempe"></canvas>-->
+<view wx:for="{{[101,102,103]}}" wx:for-item="i" style='bool:{{bool}}'>
+  <view wx:if="{{i>101}}">
+    <text id="sushe">{{i}}:在
+    </text>
+  </view>
+  <view wx:else>
+     <text id="sushe">
+    {{i}}:不在
+    </text>
+  </view>
+</view>
